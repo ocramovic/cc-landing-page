@@ -1,0 +1,118 @@
+*,
+*::before, 
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(196, 194, 187, .7);
+  font-family: 'Poppins', sans-serif;
+  color: #4f4f4f;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  color: unset;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.row {
+  text-align: center;
+}
+
+.landing-page {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  min-width: 300px;
+  max-width: 300px;
+  margin-bottom: 5rem;
+}
+
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 93vh;
+}
+
+.main-heading {
+  font-size: 2rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.main-text {
+  margin-bottom: 2rem;
+  letter-spacing: 4px;
+}
+
+.brochure-text {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.brochure-text:hover {
+  text-decoration: none;
+  opacity: .7;
+}
+
+.main-secondary-text {
+  font-size: .875rem;
+  opacity: .7;
+  letter-spacing: 4px;
+}
+
+.footer {
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.gap {
+  gap: .5rem;
+}
+
+.footer-text {
+  font-size: .75rem;
+  opacity: .7;
+  letter-spacing: 4px;
+}
+
+.icon {
+  font-size: 1.125rem;
+  opacity: .7;
+}
+
+.footer-text:hover {
+  opacity: 1;
+}
