@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <!-- Bootstrap CSS-->
@@ -20,12 +20,12 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
-    <title>CC</title>
+    <title>CC Bijoux</title>
     <link
       class="favicon"
       rel="icon"
       type="image/x-icon"
-      href="/images/logo.png"
+      href="/images/favicon.png"
     />
   </head>
   <body>
@@ -35,25 +35,27 @@
           <img class="logo" src="./images/logo.png" alt="cc logo" />
           <h1 class="main-heading">Coming soon</h1>
           <p class="main-text">
-            Get to know us by checking out our
-            <span class="brochure-text"
-              ><a href="./pdf/cc-brochure.pdf" target="_blank"
-                >brochure</a
-              ></span
+            <a href="./pdf/cc-brochure.pdf" target="_blank">Who we are</a>
+          </p>
+          <p class="main-text mb-5" id="toggle">Where to find us</p>
+          <div id="location">
+            <p class="main-secondary-text">Sylvie Saliba</p>
+            <a
+              href="https://goo.gl/maps/JoRfEZmZf4tbpDeYA"
+              target="_blank"
+              class="main-secondary-subtext"
             >
-          </p>
-          <p class="main-secondary-text">Meanwhile, find us at Sylvie Saliba</p>
-          <p class="main-secondary-text">
-            <i class="fa-light fa-location-dot me-2"></i>2 park avenue downtown,
-            Beirut
-          </p>
+              <i class="fa-light fa-location-dot me-2"></i>2 park avenue
+              downtown, Beirut
+            </a>
+          </div>
         </div>
         <div class="footer d-flex flex-column">
           <div class="d-flex align-items-center gap">
             <i class="fa-brands fa-instagram icon"></i>
             <p class="footer-text">
               <a href="https://www.instagram.com/ccbijoux_/" target="_blank"
-                >Follow us on instagram</a
+                >ccbijoux_</a
               >
             </p>
           </div>
@@ -77,5 +79,7 @@
     ></script>
     <!-- Font Awesome -->
     <script src="font.js"></script>
+    <!-- Custom JS -->
+    <script src="index.js"></script>
   </body>
 </html>
