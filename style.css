@@ -41,6 +41,7 @@ p {
 }
 
 .row {
+  position: relative;
   text-align: center;
 }
 
@@ -50,9 +51,9 @@ p {
 }
 
 .logo {
-  min-width: 300px;
-  max-width: 300px;
-  margin-bottom: 5rem;
+  min-width: 350px;
+  max-width: 350px;
+  margin-bottom: 2rem;
 }
 
 .coming-soon {
@@ -60,42 +61,55 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 93vh;
+  height: 100vh;
 }
 
 .main-heading {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  opacity: .8;
+  font-weight: 300;
   letter-spacing: 8px;
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
 .main-text {
-  margin-bottom: 2rem;
-  letter-spacing: 4px;
+  font-size: .875rem;
+  opacity: .7;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 1rem;
 }
 
-.brochure-text {
-  font-weight: bold;
-  font-style: italic;
+.main-text:hover,
+.main-secondary-subtext:hover {
+  text-decoration: none;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.main-secondary-text,
+.main-secondary-subtext {
+  font-size: .875rem;
+  opacity: .7;
+  letter-spacing: 3px;
+}
+
+.main-secondary-subtext {
   text-decoration: underline;
 }
 
-.brochure-text:hover {
-  text-decoration: none;
-  opacity: .7;
-}
-
-.main-secondary-text {
-  font-size: .875rem;
-  opacity: .7;
-  letter-spacing: 4px;
+#location {
+  display: none;
 }
 
 .footer {
   justify-content: center;
   align-items: center;
   gap: .5rem;
+  position: absolute;
+  top: 92%;
 }
 
 .gap {
@@ -105,7 +119,7 @@ p {
 .footer-text {
   font-size: .75rem;
   opacity: .7;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 
 .icon {
@@ -115,4 +129,48 @@ p {
 
 .footer-text:hover {
   opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .logo {
+    min-width: 300px;
+    max-width: 300px;
+  }
+
+  .main-heading {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .coming-soon {
+    height: 90vh;
+  }
+
+  .logo {
+    min-width: 200px;
+    max-width: 200px;
+  }
+
+  .main-heading {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 6px;
+  }
+
+  .main-text,
+  .main-secondary-text {
+    font-size: .75rem;
+  }
+
+  .footer-text {
+    font-size: .625rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  .coming-soon {
+    height: 84vh;
+  }
 }
